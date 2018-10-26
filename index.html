@@ -6,6 +6,8 @@
 </head>
 
 <body>
+<script src="function_scripts.js">
+</script>
 <!-- title page -->
 <div class="page">
 	<!-- logo (top left align) -->
@@ -23,12 +25,24 @@
 </div>
 
 <!-- people selection -->
-<div id="holder">
+<!--<div id="holder">
 	<h2 class="center-align" id="people"> How many people will be drinking tea? </h2>
 	<img src="images/singleBtn.svg" alt="Single person" "class="img-align"</img>
-	<img id="multiBtn" </img>
+</div>-->
 
-</div>
+<div class="page-next">
+	<!-- menu (top right align) -->
+	<p id="menu">
+	menu
+	</p>
+	<div class="center-align">
+		<h2> How many people will be drinking tea? </h2>
+		<img src="images/singleBtn.png" alt="Single person">
+		<img src="images/multiBtn.png" alt="Multiple people" onclick="multiForm()">
+		<p id="form"></p>
+	</div>
+</div> 
+
 </body>
 
 </html>
