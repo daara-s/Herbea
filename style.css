@@ -1,0 +1,49 @@
+.page {
+	border-bottom: 1px solid #E6E2DF;
+	border: 1px solid #E6E2DF;
+	height: 400px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 20px 10px 20px 10px;
+}
+
+#logo {
+	float: left;
+}
+
+#menu {
+	float: right;
+}
+
+.center-align {
+	text-align: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 20%;
+}
+#heading {
+	top: 40%;
+}
+
+#people {
+	top: 20%;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+
+}
+
+#holder { 
+//display:table-cell; 
+vertical-align:middle; 
+text-align:center; 
+height:100%; 
+width:100%; 
+border:  1px solid #E6E2DF; 
+	padding-left: 30px;
+	padding-right: 30px;
+	//margin: 20px 10px 20px 10px;
+}
