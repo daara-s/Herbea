@@ -37,6 +37,14 @@
 	line-height: 400px;
 }
 
+div.inline-images {
+	display: block;
+
+}
+
+img-container {
+}
+
 img {
 	width: 200px;
 	height: 200px;
@@ -54,4 +62,9 @@ img {
 
 #btn:hover {
 	transform: scale(1.1,1.1);
+}
+
+form {
+	position: absolute;
+	right: 220px;
 }
