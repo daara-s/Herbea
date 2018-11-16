@@ -1,0 +1,37 @@
+.teaIcon{
+    height: 100%;
+    width: 100%;
+}
+.column {
+    float: left;
+    width: 20.33%;
+    padding: 2.3%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.plusButton{
+    position: relative;
+    left: 37%;
+    top: -39px;
+    width: 25%;
+}
+.teaInfoBox{
+    position: relative;
+    left: 37%;
+    top: -39px;
+    width: 25%;
+    display: none;
+    overflow: hidden;
+    
+}
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}

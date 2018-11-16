@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Herbea - Tea Selection</title>
+<link rel="stylesheet" href="thirdCSS.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js">
+</script>
+</head>
+<body>
+    <h1>Would you like..</h1>
+    <div class="row">
+        <div class="column">
+            <img src="assets/whiteTea.png" class="teaIcon" alt="whiteTea"/>
+            <img src="assets/whitePlus.png" onClick="whiteInfo()" class="plusButton collapsible" alt="plus"/>
+        </div>
+        <div class="column">
+            <img src="assets/Tisa.png" class="teaIcon" alt="tisanes"/>
+            <img src="assets/redPlus.png" onClick="tisInfo()" class="plusButton" alt="plus"/>
+            <div class="teaInfoBox" id="whiteText">
+                <ul>
+                    <li>The purest and least processed type of tea, white tea is the closest tea comes to its natural state.</li>
+                    <li>Refreshing, sweet and light taste</li>
+                    <li>White tea has the most antioxidants of all and help keep you and your immune system healthy.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <img src="assets/greenTea.png" class="teaIcon" alt="greenTea"/>
+            <img src="assets/greenPlus.png" onClick="greenInfo()" class="plusButton" alt="plus"/>
+        </div>
+        <div class="column">
+            <img src="assets/blackTea.png" class="teaIcon" alt="blackTea"/>
+            <img src="assets/blackPlus.png" onClick="blackInfo()" class="plusButton" alt="plus"/>
+        </div>
+    </div>
+</body>
+<script>
+    function whiteInfo(){
+        document.getElementById('whiteText').className="show";
+    }
+    
+    
+    
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}    
+</script>
+</html>

@@ -3,9 +3,14 @@
 <head>
 <title>Herbea - Quantity Selection</title>
 <link rel="stylesheet" href="secondCSS.css">
+<link rel="stylesheet" href="css/animations.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
+<script>
+	$('#multiMainFace').click(function() {
+		$(this).addClass("slideUp");
+	});
+</script>
 <body>
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
     <div class="floatTtitle textTitle">
@@ -33,10 +38,11 @@
     </div>
     <div class="row">
         <div class="col">
-            <img src="assets/singleIcon.png" alt="singlePerson" height="80%" width="80%" id="singleIcon"/>
+            <img src="assets/singleIcon.png" alt="singlePerson" class="button" height="80%" width="80%" id="singleIcon"/>
         </div>
         <div class="col">
-            <img src="assets/multiIcon.png" alt="singlePerson" height="80%" width="80%"/>
+            <img src="assets/multiIcon.png" class="button" id="multiIcon" alt="singlePerson" height="80%" width="80%"/>
+            <img src="assets/multiMainFace.png" class="button" id="multiMainFace" alt="face" height="80%" width="80%"/>
         </div>
     </div>
     
@@ -98,6 +104,8 @@
           document.body.appendChild(css);
         };
         
+        //Show face JS
+
     </script>
     
 </body>
